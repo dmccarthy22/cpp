@@ -1,0 +1,572 @@
++++++++ mapTest ++++++++
+[==========] Running 14 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 14 tests from MapTest
+[ RUN      ] MapTest.constructorCreatesZeroSizeMap
+[       OK ] MapTest.constructorCreatesZeroSizeMap (0 ms)
+[ RUN      ] MapTest.insertWhileEmptyReturnsTrueAndMapSizeIsOne
+[       OK ] MapTest.insertWhileEmptyReturnsTrueAndMapSizeIsOne (0 ms)
+[ RUN      ] MapTest.insertOfSameKeyReturnsFalseAndMapSizeRemainsSame
+[       OK ] MapTest.insertOfSameKeyReturnsFalseAndMapSizeRemainsSame (0 ms)
+[ RUN      ] MapTest.indexOperatorOfExistingKeyReturnsProperValueAndSizeIsSame
+[       OK ] MapTest.indexOperatorOfExistingKeyReturnsProperValueAndSizeIsSame (0 ms)
+[ RUN      ] MapTest.indexOperatorOnEmptyMapProperlySetsValueAndSizeIsOne
+[       OK ] MapTest.indexOperatorOnEmptyMapProperlySetsValueAndSizeIsOne (1 ms)
+[ RUN      ] MapTest.indexOperatorOnMissingKeyProperlySetsValueAndIncrementsSize
+[       OK ] MapTest.indexOperatorOnMissingKeyProperlySetsValueAndIncrementsSize (0 ms)
+[ RUN      ] MapTest.eraseOfExistingKeyReturnsTrueAndDecrementsSize
+[       OK ] MapTest.eraseOfExistingKeyReturnsTrueAndDecrementsSize (0 ms)
+[ RUN      ] MapTest.eraseOnEmptyMapReturnsFalseAndSizeRemainsZero
+[       OK ] MapTest.eraseOnEmptyMapReturnsFalseAndSizeRemainsZero (0 ms)
+[ RUN      ] MapTest.eraseOfMissingKeyReturnsFalseAndSizeRemainsSame
+[       OK ] MapTest.eraseOfMissingKeyReturnsFalseAndSizeRemainsSame (0 ms)
+[ RUN      ] MapTest.copyConstructorMakesCorrectSize
+[       OK ] MapTest.copyConstructorMakesCorrectSize (0 ms)
+[ RUN      ] MapTest.copyConstructorMakesSeparateCopy
+[       OK ] MapTest.copyConstructorMakesSeparateCopy (0 ms)
+[ RUN      ] MapTest.assignmentOperatorMakesCorrectSize
+[       OK ] MapTest.assignmentOperatorMakesCorrectSize (0 ms)
+[ RUN      ] MapTest.assignmentMakesSeparateCopy
+[       OK ] MapTest.assignmentMakesSeparateCopy (0 ms)
+[ RUN      ] MapTest.assignmentWithManyItemsHasCorrectValues
+[       OK ] MapTest.assignmentWithManyItemsHasCorrectValues (2 ms)
+[----------] 14 tests from MapTest (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 14 tests from 1 test case ran. (3 ms total)
+[  PASSED  ] 14 tests.
+
++++++++ broken1 ++++++++
+
+[==========] Running 14 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 14 tests from MapTest
+[ RUN      ] MapTest.constructorCreatesZeroSizeMap
+[       OK ] MapTest.constructorCreatesZeroSizeMap (0 ms)
+[ RUN      ] MapTest.insertWhileEmptyReturnsTrueAndMapSizeIsOne
+[       OK ] MapTest.insertWhileEmptyReturnsTrueAndMapSizeIsOne (0 ms)
+[ RUN      ] MapTest.insertOfSameKeyReturnsFalseAndMapSizeRemainsSame
+[       OK ] MapTest.insertOfSameKeyReturnsFalseAndMapSizeRemainsSame (0 ms)
+[ RUN      ] MapTest.indexOperatorOfExistingKeyReturnsProperValueAndSizeIsSame
+[       OK ] MapTest.indexOperatorOfExistingKeyReturnsProperValueAndSizeIsSame (0 ms)
+[ RUN      ] MapTest.indexOperatorOnEmptyMapProperlySetsValueAndSizeIsOne
+[       OK ] MapTest.indexOperatorOnEmptyMapProperlySetsValueAndSizeIsOne (0 ms)
+[ RUN      ] MapTest.indexOperatorOnMissingKeyProperlySetsValueAndIncrementsSize
+mapTest.cpp:64: Failure
+Value of: testMap.size()
+  Actual: 2
+Expected: 3
+[  FAILED  ] MapTest.indexOperatorOnMissingKeyProperlySetsValueAndIncrementsSize (0 ms)
+[ RUN      ] MapTest.eraseOfExistingKeyReturnsTrueAndDecrementsSize
+mapTest.cpp:74: Failure
+Value of: testMap.size()
+  Actual: 2
+Expected: 1
+[  FAILED  ] MapTest.eraseOfExistingKeyReturnsTrueAndDecrementsSize (0 ms)
+[ RUN      ] MapTest.eraseOnEmptyMapReturnsFalseAndSizeRemainsZero
+[       OK ] MapTest.eraseOnEmptyMapReturnsFalseAndSizeRemainsZero (0 ms)
+[ RUN      ] MapTest.eraseOfMissingKeyReturnsFalseAndSizeRemainsSame
+[       OK ] MapTest.eraseOfMissingKeyReturnsFalseAndSizeRemainsSame (0 ms)
+[ RUN      ] MapTest.copyConstructorMakesCorrectSize
+[       OK ] MapTest.copyConstructorMakesCorrectSize (0 ms)
+[ RUN      ] MapTest.copyConstructorMakesSeparateCopy
+mapTest.cpp:114: Failure
+Value of: m1.size()
+  Actual: 2
+Expected: 1
+[  FAILED  ] MapTest.copyConstructorMakesSeparateCopy (0 ms)
+[ RUN      ] MapTest.assignmentOperatorMakesCorrectSize
+[       OK ] MapTest.assignmentOperatorMakesCorrectSize (0 ms)
+[ RUN      ] MapTest.assignmentMakesSeparateCopy
+mapTest.cpp:144: Failure
+Value of: m1.size()
+  Actual: 2
+Expected: 1
+[  FAILED  ] MapTest.assignmentMakesSeparateCopy (0 ms)
+[ RUN      ] MapTest.assignmentWithManyItemsHasCorrectValues
+mapTest.cpp:174: Failure
+Value of: m2[str]
+  Actual: ""
+Expected: m1[str]
+Which is: "50"
+mapTest.cpp:174: Failure
+Value of: m2[str]
+  Actual: ""
+Expected: m1[str]
+Which is: "51"
+mapTest.cpp:174: Failure
+Value of: m2[str]
+  Actual: ""
+Expected: m1[str]
+Which is: "52"
+mapTest.cpp:174: Failure
+Value of: m2[str]
+  Actual: ""
+Expected: m1[str]
+Which is: "53"
+mapTest.cpp:174: Failure
+Value of: m2[str]
+  Actual: ""
+Expected: m1[str]
+Which is: "54"
+mapTest.cpp:174: Failure
+Value of: m2[str]
+  Actual: ""
+Expected: m1[str]
+Which is: "901"
+mapTest.cpp:174: Failure
+Value of: m2[str]
+  Actual: ""
+Expected: m1[str]
+Which is: "902"
+mapTest.cpp:174: Failure
+Value of: m2[str]
+  Actual: ""
+Expected: m1[str]
+Which is: "903"
+mapTest.cpp:174: Failure
+Value of: m2[str]
+  Actual: ""
+Expected: m1[str]
+Which is: "904"
+[  FAILED  ] MapTest.assignmentWithManyItemsHasCorrectValues (2 ms)
+[----------] 14 tests from MapTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 14 tests from 1 test case ran. (2 ms total)
+[  PASSED  ] 9 tests.
+[  FAILED  ] 5 tests, listed below:
+[  FAILED  ] MapTest.indexOperatorOnMissingKeyProperlySetsValueAndIncrementsSize
+[  FAILED  ] MapTest.eraseOfExistingKeyReturnsTrueAndDecrementsSize
+[  FAILED  ] MapTest.copyConstructorMakesSeparateCopy
+[  FAILED  ] MapTest.assignmentMakesSeparateCopy
+[  FAILED  ] MapTest.assignmentWithManyItemsHasCorrectValues
+
+ 5 FAILED TESTS
+
++++++++ broken2 ++++++++
+
+[==========] Running 14 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 14 tests from MapTest
+[ RUN      ] MapTest.constructorCreatesZeroSizeMap
+mapTest.cpp:15: Failure
+Value of: testMap.size()
+  Actual: 1
+Expected: 0
+[  FAILED  ] MapTest.constructorCreatesZeroSizeMap (0 ms)
+[ RUN      ] MapTest.insertWhileEmptyReturnsTrueAndMapSizeIsOne
+mapTest.cpp:22: Failure
+Value of: testMap.size()
+  Actual: 2
+Expected: 1
+[  FAILED  ] MapTest.insertWhileEmptyReturnsTrueAndMapSizeIsOne (0 ms)
+[ RUN      ] MapTest.insertOfSameKeyReturnsFalseAndMapSizeRemainsSame
+mapTest.cpp:30: Failure
+Value of: testMap.size()
+  Actual: 3
+Expected: 2
+mapTest.cpp:32: Failure
+Value of: testMap.size()
+  Actual: 3
+Expected: 2
+mapTest.cpp:34: Failure
+Value of: testMap.size()
+  Actual: 3
+Expected: 2
+[  FAILED  ] MapTest.insertOfSameKeyReturnsFalseAndMapSizeRemainsSame (0 ms)
+[ RUN      ] MapTest.indexOperatorOfExistingKeyReturnsProperValueAndSizeIsSame
+mapTest.cpp:43: Failure
+Value of: testMap.size()
+  Actual: 4
+Expected: 3
+mapTest.cpp:45: Failure
+Value of: testMap.size()
+  Actual: 4
+Expected: 3
+[  FAILED  ] MapTest.indexOperatorOfExistingKeyReturnsProperValueAndSizeIsSame (0 ms)
+[ RUN      ] MapTest.indexOperatorOnEmptyMapProperlySetsValueAndSizeIsOne
+mapTest.cpp:53: Failure
+Value of: testMap.size()
+  Actual: 2
+Expected: 1
+[  FAILED  ] MapTest.indexOperatorOnEmptyMapProperlySetsValueAndSizeIsOne (0 ms)
+[ RUN      ] MapTest.indexOperatorOnMissingKeyProperlySetsValueAndIncrementsSize
+mapTest.cpp:61: Failure
+Value of: testMap.size()
+  Actual: 3
+Expected: 2
+mapTest.cpp:64: Failure
+Value of: testMap.size()
+  Actual: 4
+Expected: 3
+[  FAILED  ] MapTest.indexOperatorOnMissingKeyProperlySetsValueAndIncrementsSize (0 ms)
+[ RUN      ] MapTest.eraseOfExistingKeyReturnsTrueAndDecrementsSize
+mapTest.cpp:72: Failure
+Value of: testMap.size()
+  Actual: 3
+Expected: 2
+mapTest.cpp:74: Failure
+Value of: testMap.size()
+  Actual: 2
+Expected: 1
+[  FAILED  ] MapTest.eraseOfExistingKeyReturnsTrueAndDecrementsSize (0 ms)
+[ RUN      ] MapTest.eraseOnEmptyMapReturnsFalseAndSizeRemainsZero
+mapTest.cpp:81: Failure
+Value of: testMap.size()
+  Actual: 1
+Expected: 0
+[  FAILED  ] MapTest.eraseOnEmptyMapReturnsFalseAndSizeRemainsZero (0 ms)
+[ RUN      ] MapTest.eraseOfMissingKeyReturnsFalseAndSizeRemainsSame
+mapTest.cpp:89: Failure
+Value of: testMap.size()
+  Actual: 3
+Expected: 2
+mapTest.cpp:91: Failure
+Value of: testMap.size()
+  Actual: 3
+Expected: 2
+[  FAILED  ] MapTest.eraseOfMissingKeyReturnsFalseAndSizeRemainsSame (0 ms)
+[ RUN      ] MapTest.copyConstructorMakesCorrectSize
+mapTest.cpp:102: Failure
+Value of: m2.size()
+  Actual: 3
+Expected: 2
+[  FAILED  ] MapTest.copyConstructorMakesCorrectSize (0 ms)
+[ RUN      ] MapTest.copyConstructorMakesSeparateCopy
+mapTest.cpp:114: Failure
+Value of: m1.size()
+  Actual: 2
+Expected: 1
+mapTest.cpp:115: Failure
+Value of: m2.size()
+  Actual: 4
+Expected: 3
+[  FAILED  ] MapTest.copyConstructorMakesSeparateCopy (0 ms)
+[ RUN      ] MapTest.assignmentOperatorMakesCorrectSize
+mapTest.cpp:131: Failure
+Value of: m2.size()
+  Actual: 4
+Expected: 3
+[  FAILED  ] MapTest.assignmentOperatorMakesCorrectSize (0 ms)
+[ RUN      ] MapTest.assignmentMakesSeparateCopy
+mapTest.cpp:144: Failure
+Value of: m1.size()
+  Actual: 2
+Expected: 1
+mapTest.cpp:145: Failure
+Value of: m2.size()
+  Actual: 4
+Expected: 3
+[  FAILED  ] MapTest.assignmentMakesSeparateCopy (0 ms)
+[ RUN      ] MapTest.assignmentWithManyItemsHasCorrectValues
+mapTest.cpp:164: Failure
+Value of: m1.size()
+  Actual: 1051
+Expected: bigValue
+Which is: 1050
+mapTest.cpp:168: Failure
+Value of: m2.size()
+  Actual: 1051
+Expected: bigValue
+Which is: 1050
+[  FAILED  ] MapTest.assignmentWithManyItemsHasCorrectValues (2 ms)
+[----------] 14 tests from MapTest (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 14 tests from 1 test case ran. (3 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 14 tests, listed below:
+[  FAILED  ] MapTest.constructorCreatesZeroSizeMap
+[  FAILED  ] MapTest.insertWhileEmptyReturnsTrueAndMapSizeIsOne
+[  FAILED  ] MapTest.insertOfSameKeyReturnsFalseAndMapSizeRemainsSame
+[  FAILED  ] MapTest.indexOperatorOfExistingKeyReturnsProperValueAndSizeIsSame
+[  FAILED  ] MapTest.indexOperatorOnEmptyMapProperlySetsValueAndSizeIsOne
+[  FAILED  ] MapTest.indexOperatorOnMissingKeyProperlySetsValueAndIncrementsSize
+[  FAILED  ] MapTest.eraseOfExistingKeyReturnsTrueAndDecrementsSize
+[  FAILED  ] MapTest.eraseOnEmptyMapReturnsFalseAndSizeRemainsZero
+[  FAILED  ] MapTest.eraseOfMissingKeyReturnsFalseAndSizeRemainsSame
+[  FAILED  ] MapTest.copyConstructorMakesCorrectSize
+[  FAILED  ] MapTest.copyConstructorMakesSeparateCopy
+[  FAILED  ] MapTest.assignmentOperatorMakesCorrectSize
+[  FAILED  ] MapTest.assignmentMakesSeparateCopy
+[  FAILED  ] MapTest.assignmentWithManyItemsHasCorrectValues
+
+14 FAILED TESTS
+
++++++++ broken3 ++++++++
+
+[==========] Running 14 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 14 tests from MapTest
+[ RUN      ] MapTest.constructorCreatesZeroSizeMap
+[       OK ] MapTest.constructorCreatesZeroSizeMap (0 ms)
+[ RUN      ] MapTest.insertWhileEmptyReturnsTrueAndMapSizeIsOne
+[       OK ] MapTest.insertWhileEmptyReturnsTrueAndMapSizeIsOne (0 ms)
+[ RUN      ] MapTest.insertOfSameKeyReturnsFalseAndMapSizeRemainsSame
+mapTest.cpp:31: Failure
+Value of: testMap.insert(aKey, aValue)
+  Actual: true
+Expected: false
+Same key/value pair
+mapTest.cpp:32: Failure
+Value of: testMap.size()
+  Actual: 3
+Expected: 2
+mapTest.cpp:33: Failure
+Value of: testMap.insert("b", "beta")
+  Actual: true
+Expected: false
+Same key, different value
+mapTest.cpp:34: Failure
+Value of: testMap.size()
+  Actual: 4
+Expected: 2
+[  FAILED  ] MapTest.insertOfSameKeyReturnsFalseAndMapSizeRemainsSame (0 ms)
+[ RUN      ] MapTest.indexOperatorOfExistingKeyReturnsProperValueAndSizeIsSame
+[       OK ] MapTest.indexOperatorOfExistingKeyReturnsProperValueAndSizeIsSame (0 ms)
+[ RUN      ] MapTest.indexOperatorOnEmptyMapProperlySetsValueAndSizeIsOne
+[       OK ] MapTest.indexOperatorOnEmptyMapProperlySetsValueAndSizeIsOne (0 ms)
+[ RUN      ] MapTest.indexOperatorOnMissingKeyProperlySetsValueAndIncrementsSize
+[       OK ] MapTest.indexOperatorOnMissingKeyProperlySetsValueAndIncrementsSize (0 ms)
+[ RUN      ] MapTest.eraseOfExistingKeyReturnsTrueAndDecrementsSize
+[       OK ] MapTest.eraseOfExistingKeyReturnsTrueAndDecrementsSize (0 ms)
+[ RUN      ] MapTest.eraseOnEmptyMapReturnsFalseAndSizeRemainsZero
+mapTest.cpp:80: Failure
+Value of: testMap.erase(aValue)
+  Actual: true
+Expected: false
+[  FAILED  ] MapTest.eraseOnEmptyMapReturnsFalseAndSizeRemainsZero (0 ms)
+[ RUN      ] MapTest.eraseOfMissingKeyReturnsFalseAndSizeRemainsSame
+mapTest.cpp:90: Failure
+Value of: testMap.erase(aValue)
+  Actual: true
+Expected: false
+[  FAILED  ] MapTest.eraseOfMissingKeyReturnsFalseAndSizeRemainsSame (0 ms)
+[ RUN      ] MapTest.copyConstructorMakesCorrectSize
+[       OK ] MapTest.copyConstructorMakesCorrectSize (0 ms)
+[ RUN      ] MapTest.copyConstructorMakesSeparateCopy
+[       OK ] MapTest.copyConstructorMakesSeparateCopy (0 ms)
+[ RUN      ] MapTest.assignmentOperatorMakesCorrectSize
+[       OK ] MapTest.assignmentOperatorMakesCorrectSize (0 ms)
+[ RUN      ] MapTest.assignmentMakesSeparateCopy
+[       OK ] MapTest.assignmentMakesSeparateCopy (0 ms)
+[ RUN      ] MapTest.assignmentWithManyItemsHasCorrectValues
+mapTest.cpp:174: Failure
+Value of: m2[str]
+  Actual: ""
+Expected: m1[str]
+Which is: "50"
+mapTest.cpp:174: Failure
+Value of: m2[str]
+  Actual: ""
+Expected: m1[str]
+Which is: "51"
+mapTest.cpp:174: Failure
+Value of: m2[str]
+  Actual: ""
+Expected: m1[str]
+Which is: "52"
+mapTest.cpp:174: Failure
+Value of: m2[str]
+  Actual: ""
+Expected: m1[str]
+Which is: "53"
+mapTest.cpp:174: Failure
+Value of: m2[str]
+  Actual: ""
+Expected: m1[str]
+Which is: "54"
+mapTest.cpp:174: Failure
+Value of: m2[str]
+  Actual: ""
+Expected: m1[str]
+Which is: "901"
+mapTest.cpp:174: Failure
+Value of: m2[str]
+  Actual: ""
+Expected: m1[str]
+Which is: "902"
+mapTest.cpp:174: Failure
+Value of: m2[str]
+  Actual: ""
+Expected: m1[str]
+Which is: "903"
+mapTest.cpp:174: Failure
+Value of: m2[str]
+  Actual: ""
+Expected: m1[str]
+Which is: "904"
+[  FAILED  ] MapTest.assignmentWithManyItemsHasCorrectValues (2 ms)
+[----------] 14 tests from MapTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 14 tests from 1 test case ran. (2 ms total)
+[  PASSED  ] 10 tests.
+[  FAILED  ] 4 tests, listed below:
+[  FAILED  ] MapTest.insertOfSameKeyReturnsFalseAndMapSizeRemainsSame
+[  FAILED  ] MapTest.eraseOnEmptyMapReturnsFalseAndSizeRemainsZero
+[  FAILED  ] MapTest.eraseOfMissingKeyReturnsFalseAndSizeRemainsSame
+[  FAILED  ] MapTest.assignmentWithManyItemsHasCorrectValues
+
+ 4 FAILED TESTS
+
++++++++ broken4 ++++++++
+
+[==========] Running 14 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 14 tests from MapTest
+[ RUN      ] MapTest.constructorCreatesZeroSizeMap
+[       OK ] MapTest.constructorCreatesZeroSizeMap (0 ms)
+[ RUN      ] MapTest.insertWhileEmptyReturnsTrueAndMapSizeIsOne
+mapTest.cpp:21: Failure
+Value of: testMap.insert(aKey, aValue)
+  Actual: false
+Expected: true
+[  FAILED  ] MapTest.insertWhileEmptyReturnsTrueAndMapSizeIsOne (0 ms)
+[ RUN      ] MapTest.insertOfSameKeyReturnsFalseAndMapSizeRemainsSame
+[       OK ] MapTest.insertOfSameKeyReturnsFalseAndMapSizeRemainsSame (0 ms)
+[ RUN      ] MapTest.indexOperatorOfExistingKeyReturnsProperValueAndSizeIsSame
+mapTest.cpp:45: Failure
+Value of: testMap.size()
+  Actual: 4
+Expected: 3
+[  FAILED  ] MapTest.indexOperatorOfExistingKeyReturnsProperValueAndSizeIsSame (1 ms)
+[ RUN      ] MapTest.indexOperatorOnEmptyMapProperlySetsValueAndSizeIsOne
+mapTest.cpp:53: Failure
+Value of: testMap.size()
+  Actual: 2
+Expected: 1
+[  FAILED  ] MapTest.indexOperatorOnEmptyMapProperlySetsValueAndSizeIsOne (0 ms)
+[ RUN      ] MapTest.indexOperatorOnMissingKeyProperlySetsValueAndIncrementsSize
+mapTest.cpp:64: Failure
+Value of: testMap.size()
+  Actual: 4
+Expected: 3
+[  FAILED  ] MapTest.indexOperatorOnMissingKeyProperlySetsValueAndIncrementsSize (0 ms)
+[ RUN      ] MapTest.eraseOfExistingKeyReturnsTrueAndDecrementsSize
+[       OK ] MapTest.eraseOfExistingKeyReturnsTrueAndDecrementsSize (0 ms)
+[ RUN      ] MapTest.eraseOnEmptyMapReturnsFalseAndSizeRemainsZero
+[       OK ] MapTest.eraseOnEmptyMapReturnsFalseAndSizeRemainsZero (0 ms)
+[ RUN      ] MapTest.eraseOfMissingKeyReturnsFalseAndSizeRemainsSame
+[       OK ] MapTest.eraseOfMissingKeyReturnsFalseAndSizeRemainsSame (0 ms)
+[ RUN      ] MapTest.copyConstructorMakesCorrectSize
+mapTest.cpp:101: Failure
+Value of: m2.size()
+  Actual: 1622148672
+Expected: m1.size()
+Which is: 2
+mapTest.cpp:102: Failure
+Value of: m2.size()
+  Actual: 1622148672
+Expected: 2
+[  FAILED  ] MapTest.copyConstructorMakesCorrectSize (0 ms)
+[ RUN      ] MapTest.copyConstructorMakesSeparateCopy
+mapTest.cpp:115: Failure
+Value of: m2.size()
+  Actual: 1602232033
+Expected: 3
+[  FAILED  ] MapTest.copyConstructorMakesSeparateCopy (0 ms)
+[ RUN      ] MapTest.assignmentOperatorMakesCorrectSize
+mapTest.cpp:130: Failure
+Value of: m2.size()
+  Actual: 23823593
+Expected: m1.size()
+Which is: 1
+mapTest.cpp:131: Failure
+Value of: m2.size()
+  Actual: 23823593
+Expected: 3
+[  FAILED  ] MapTest.assignmentOperatorMakesCorrectSize (0 ms)
+[ RUN      ] MapTest.assignmentMakesSeparateCopy
+mapTest.cpp:145: Failure
+Value of: m2.size()
+  Actual: 1
+Expected: 3
+[  FAILED  ] MapTest.assignmentMakesSeparateCopy (0 ms)
+[ RUN      ] MapTest.assignmentWithManyItemsHasCorrectValues
+mapTest.cpp:168: Failure
+Value of: m2.size()
+  Actual: 0
+Expected: bigValue
+Which is: 1050
+[  FAILED  ] MapTest.assignmentWithManyItemsHasCorrectValues (2 ms)
+[----------] 14 tests from MapTest (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 14 tests from 1 test case ran. (3 ms total)
+[  PASSED  ] 5 tests.
+[  FAILED  ] 9 tests, listed below:
+[  FAILED  ] MapTest.insertWhileEmptyReturnsTrueAndMapSizeIsOne
+[  FAILED  ] MapTest.indexOperatorOfExistingKeyReturnsProperValueAndSizeIsSame
+[  FAILED  ] MapTest.indexOperatorOnEmptyMapProperlySetsValueAndSizeIsOne
+[  FAILED  ] MapTest.indexOperatorOnMissingKeyProperlySetsValueAndIncrementsSize
+[  FAILED  ] MapTest.copyConstructorMakesCorrectSize
+[  FAILED  ] MapTest.copyConstructorMakesSeparateCopy
+[  FAILED  ] MapTest.assignmentOperatorMakesCorrectSize
+[  FAILED  ] MapTest.assignmentMakesSeparateCopy
+[  FAILED  ] MapTest.assignmentWithManyItemsHasCorrectValues
+
+ 9 FAILED TESTS
+
++++++++ broken5 ++++++++
+
+[==========] Running 14 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 14 tests from MapTest
+[ RUN      ] MapTest.constructorCreatesZeroSizeMap
+[       OK ] MapTest.constructorCreatesZeroSizeMap (0 ms)
+[ RUN      ] MapTest.insertWhileEmptyReturnsTrueAndMapSizeIsOne
+[       OK ] MapTest.insertWhileEmptyReturnsTrueAndMapSizeIsOne (0 ms)
+[ RUN      ] MapTest.insertOfSameKeyReturnsFalseAndMapSizeRemainsSame
+[       OK ] MapTest.insertOfSameKeyReturnsFalseAndMapSizeRemainsSame (0 ms)
+[ RUN      ] MapTest.indexOperatorOfExistingKeyReturnsProperValueAndSizeIsSame
+[       OK ] MapTest.indexOperatorOfExistingKeyReturnsProperValueAndSizeIsSame (0 ms)
+[ RUN      ] MapTest.indexOperatorOnEmptyMapProperlySetsValueAndSizeIsOne
+[       OK ] MapTest.indexOperatorOnEmptyMapProperlySetsValueAndSizeIsOne (0 ms)
+[ RUN      ] MapTest.indexOperatorOnMissingKeyProperlySetsValueAndIncrementsSize
+mapTest.cpp:63: Failure
+Value of: testMap[aKey].c_str()
+  Actual: ""
+Expected: aValue
+Which is: "alpha"
+mapTest.cpp:64: Failure
+Value of: testMap.size()
+  Actual: 4
+Expected: 3
+[  FAILED  ] MapTest.indexOperatorOnMissingKeyProperlySetsValueAndIncrementsSize (0 ms)
+[ RUN      ] MapTest.eraseOfExistingKeyReturnsTrueAndDecrementsSize
+[       OK ] MapTest.eraseOfExistingKeyReturnsTrueAndDecrementsSize (0 ms)
+[ RUN      ] MapTest.eraseOnEmptyMapReturnsFalseAndSizeRemainsZero
+[       OK ] MapTest.eraseOnEmptyMapReturnsFalseAndSizeRemainsZero (0 ms)
+[ RUN      ] MapTest.eraseOfMissingKeyReturnsFalseAndSizeRemainsSame
+[       OK ] MapTest.eraseOfMissingKeyReturnsFalseAndSizeRemainsSame (0 ms)
+[ RUN      ] MapTest.copyConstructorMakesCorrectSize
+[       OK ] MapTest.copyConstructorMakesCorrectSize (0 ms)
+[ RUN      ] MapTest.copyConstructorMakesSeparateCopy
+mapTest.cpp:117: Failure
+Value of: m1["b"] == m2["b"]
+  Actual: true
+Expected: false
+[  FAILED  ] MapTest.copyConstructorMakesSeparateCopy (1 ms)
+[ RUN      ] MapTest.assignmentOperatorMakesCorrectSize
+[       OK ] MapTest.assignmentOperatorMakesCorrectSize (0 ms)
+[ RUN      ] MapTest.assignmentMakesSeparateCopy
+mapTest.cpp:147: Failure
+Value of: m1["b"] == m2["b"]
+  Actual: true
+Expected: false
+[  FAILED  ] MapTest.assignmentMakesSeparateCopy (0 ms)
+[ RUN      ] MapTest.assignmentWithManyItemsHasCorrectValues
+[       OK ] MapTest.assignmentWithManyItemsHasCorrectValues (1 ms)
+[----------] 14 tests from MapTest (2 ms total)
+
+[----------] Global test environment tear-down
+[==========] 14 tests from 1 test case ran. (2 ms total)
+[  PASSED  ] 11 tests.
+[  FAILED  ] 3 tests, listed below:
+[  FAILED  ] MapTest.indexOperatorOnMissingKeyProperlySetsValueAndIncrementsSize
+[  FAILED  ] MapTest.copyConstructorMakesSeparateCopy
+[  FAILED  ] MapTest.assignmentMakesSeparateCopy
+
+ 3 FAILED TESTS

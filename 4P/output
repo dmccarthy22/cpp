@@ -1,0 +1,76 @@
+********** PROGRAM OUTPUT ********
++++++++TEST Stack++++++++
++++++++TEST 1++++++++
+9 7 5 3 1 6 4 2 
++++++++TEST 2++++++++
+exception caught 
+exception caught 
++++++++TEST 3++++++++
++++++++TEST 4++++++++
++++++++TEST 5++++++++
++++++++TEST Queue++++++++
++++++++TEST 1++++++++
+999992 999993 999994 999995 999996 999997 999998 999999 
++++++++TEST 2++++++++
+exception caught
+exception caught
++++++++TEST 3++++++++
++++++++TEST 4++++++++
++++++++TEST 5++++++++
++++++++Valgrind++++++++
+==99535== Memcheck, a memory error detector
+==99535== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==99535== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==99535== Command: ./queueTest4
+==99535== 
+==99535== 
+==99535== HEAP SUMMARY:
+==99535==     in use at exit: 0 bytes in 0 blocks
+==99535==   total heap usage: 4 allocs, 4 frees, 72,832 bytes allocated
+==99535== 
+==99535== All heap blocks were freed -- no leaks are possible
+==99535== 
+==99535== For counts of detected and suppressed errors, rerun with: -v
+==99535== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==99536== Memcheck, a memory error detector
+==99536== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==99536== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==99536== Command: ./queueTest5
+==99536== 
+==99536== 
+==99536== HEAP SUMMARY:
+==99536==     in use at exit: 0 bytes in 0 blocks
+==99536==   total heap usage: 12 allocs, 12 frees, 97,280 bytes allocated
+==99536== 
+==99536== All heap blocks were freed -- no leaks are possible
+==99536== 
+==99536== For counts of detected and suppressed errors, rerun with: -v
+==99536== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==99537== Memcheck, a memory error detector
+==99537== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==99537== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==99537== Command: ./stackTest4
+==99537== 
+==99537== 
+==99537== HEAP SUMMARY:
+==99537==     in use at exit: 0 bytes in 0 blocks
+==99537==   total heap usage: 7 allocs, 7 frees, 73,760 bytes allocated
+==99537== 
+==99537== All heap blocks were freed -- no leaks are possible
+==99537== 
+==99537== For counts of detected and suppressed errors, rerun with: -v
+==99537== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==99538== Memcheck, a memory error detector
+==99538== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==99538== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==99538== Command: ./stackTest5
+==99538== 
+==99538== 
+==99538== HEAP SUMMARY:
+==99538==     in use at exit: 0 bytes in 0 blocks
+==99538==   total heap usage: 13 allocs, 13 frees, 105,472 bytes allocated
+==99538== 
+==99538== All heap blocks were freed -- no leaks are possible
+==99538== 
+==99538== For counts of detected and suppressed errors, rerun with: -v
+==99538== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

@@ -1,0 +1,29 @@
+#!/bin/bash -f
+
+echo "+++++++ mapTest ++++++++"   
+./mapTest
+
+echo
+echo "+++++++ broken1 ++++++++"   
+echo
+./broken1
+
+echo
+echo "+++++++ broken2 ++++++++"   
+echo
+./broken2
+
+echo
+echo "+++++++ broken3 ++++++++"   
+echo
+./broken3
+
+echo
+echo "+++++++ broken4 ++++++++"   
+echo
+./broken4
+
+echo
+echo "+++++++ broken5 ++++++++"   
+echo
+./broken5
